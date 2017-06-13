@@ -1,19 +1,16 @@
 # AndroidDaemonService
 
-> 本库代码不是所谓万能不死的黑科技实现，旨在提供更合理的进程保活方式。
+The library code is not the so-called omnipotent black technology implementation, designed to provide a more reasonable process of keeping the way.
+In addition, individuals do not like the so-called omnipotent process of keeping alive. There are two reasons:
 
-另外，个人也并不喜欢所谓的万能不死进程保活方式。原因大致有二：
+Immortal process is impossible (personally think), Google can not let you do whatever you want on the Android platform;
+Rogue way to keep the process will only ruin the entire Android eco-environment, for all Android platform developers or other stakeholders harmless and no benefit;
+Latest update (edited at 2016-04-20)
 
-- 不死的进程是不可能存在的（个人认为），Google不可能让你在Android平台上为所欲为；
-- 流氓方式的进程保活只会搞坏整个 Android 生态环境，对所有 Android 平台开发者或其他利益相关者百害而无一利；
+Fix bugs on some models;
 
-## 最新更新（编辑于2016-04-20）
+Verify the Huawei machine Q and WeChat list of the problem; there are children's shoes asked, in the loom on the loom found in the background of the process, oom_adj value is not changed, ask is not what black technology in which. To this end, I slightly verify that, verify the way is to change the current package name to the mobile phone QQ, compiled and run on the machine in Huawei, I found how to kill the process are also die, back to the background oom_adj value The same does not change, and restore the original package name to die. So, you know! You want to try, you can download the package I have compiled, verify that I agree with
 
-- 修复一些机型上的bug；
-
-- 验证了华为机子上手Q和微信白名单问题；**有童鞋问，在华为的机子上发现微信UI进程退到后台，oom_adj的值一点都没有变，问是不是有什么黑科技在其中。为此，我稍稍验证了一下，验证方式就是把当前工程的包名改成手机QQ的，编译运行在华为的机子上，发现我的进程怎么杀也都是不死的，退到后台oom_adj的值同样不发生变化，而恢复原来的包名就不行了。so，你懂的！你想试试的话，可以下载我已经编译好的包，验证一下是否和我一致**
-
-1. [手Q包名apk](notes/AndroidDaemonService-debug（伪装手Q）.apk)
-2. [普通包名apk](notes/AndroidDaemonService-debug（普通）.apk)
-
-详细文章请看 http://www.jianshu.com/p/63aafe3c12af
+Hand Q package name apk
+Ordinary package name apk
+For more information, please see http://www.jianshu.com/p/63aafe3c12af
